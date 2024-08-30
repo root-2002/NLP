@@ -1,0 +1,33 @@
+{
+  "name": "fend-webpack-content",
+  "version": "1.0.0",
+  "description": "A simple project to analyze text using an API",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest"
+  },
+  "jest": {
+  "testEnvironment": "jsdom"
+},
+  "author": "Chris",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "supertest": "^7.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^6.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^27.0.6",
+    "sass": "^1.32.8",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "webpack-dev-server": "^4.7.0",
+    "workbox-webpack-plugin": "^6.4.1"
+  }
+}
